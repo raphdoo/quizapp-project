@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizapp.css">
+    <script src="quizapp.js" defer></script>
+    <title>Quiz App</title>
+</head>
+<body>
+    <main class="container">
+        <!-- logo section -->
+        <div class="logo">
+            <img src="quizapplogo.JPG">
+        </div>
+
+        <!--body section-->
+        <section class="mainContainer">
+            <div id="loader"></div>
+            <div class="questionContainer">
+                <div class="questionCard">
+                    <h3 class="heading">General Knowledge test</h3>
+                    <div class="questionField">
+                        <div class="progressBar">
+                            <div class="progressBarFull"></div>
+                        </div>
+                        <h2 class="questionTag"></h2>
+                        <h4 class="question"></h4>
+                        <div class="optionList">
+                            <input type="radio" name="options" data-number="1" id="1" value="1">
+                            <label for="1" class="options"><p class="optionsText"><span class="optionsLabel">A</span><span class="optionsParam" data-number="1"></span></p></label>
+                            <input type="radio" name="options" data-number="2" id="2" value="2">
+                            <label for="2" id="2" class="options"><p class="optionsText"><span class="optionsLabel">B</span><span class="optionsParam" data-number="2"></span></p></label>
+                            <input type="radio" name="options" data-number="3" id="3" value="3">
+                            <label for="3" id="3" class="options"><p class="optionsText"><span class="optionsLabel">C</span><span class="optionsParam" data-number="3"></span></p></label>
+                            <input type="radio" name="options" data-number="4" id="4" value="4">
+                            <label for="4" id="4" class="options"><p class="optionsText"><span class="optionsLabel">D</span><span class="optionsParam" data-number="4"></span></p></label>
+                        </div>
+                        
+                    </div>
+                    <div class="nextbtn" align="right">
+                        <button class="btn" type="button" value="submit">Next</button>
+                    </div>
+                </div>
+                <div class="sidebars">
+                    <div class="timer">
+                        <h3 class="heading">Time left</h3>
+                        <div class="displayTime">
+                            <h3 id="timer"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
